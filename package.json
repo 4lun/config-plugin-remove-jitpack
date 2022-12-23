@@ -1,0 +1,27 @@
+{
+  "name": "config-plugin-remove-jitpack",
+  "version": "1.0.0",
+  "author": "Alun Davey",
+  "homepage": "https://github.com/4lun/config-plugin-remove-jitpack#readme",
+  "description": "JitPack is added in the base template for Android builds on Expo, this removes it.",
+  "main": "app.plugin.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4lun/config-plugin-remove-jitpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/4lun/config-plugin-remove-jitpack/issues"
+  },
+  "scripts": {
+    "build": "expo-module build plugin",
+    "clean": "expo-module clean plugin",
+    "test": "expo-module test plugin",
+    "prepare": "yarn clean && EXPO_NONINTERACTIVE=1 yarn build",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },  
+  "devDependencies": {
+    "expo-module-scripts": "^3.0.4"
+  }
+}
